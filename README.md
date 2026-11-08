@@ -1,7 +1,6 @@
 # AGPV：用于数学自纠错的智能体引导过程验证
 
-**Agent-Guided Process Verification for Mathematical Self-Correction**  
-Rui Zou · Mengqi Wei · Xin Zhao · Ji-Rong Wen
+**Agent-Guided Process Verification for Mathematical Self-Correction**
 
 数学解答中，一步推导出错可能影响后续步骤，只检查最终答案还可能漏掉需要讨论的情况。AGPV 把解答拆成一组按顺序排列的关键判断，逐一检查推导、计算、题目约束以及解是否完整。发现第一个错误后，模型根据验证结果，从出错处重新推导。
 
@@ -47,8 +46,16 @@ python 0-3_all_model_test/run_plan_S_SC/S_SC_S3-1-2_forward+compress/run_agpv.py
 
 要改跑 HMMT，请先按 `0-0_datasets/README.md` 准备题集，再将两步命令中的 `--dataset demo` 换成 `--dataset hmmt_feb_2025`。
 
+部分验证与纠错代码改编自 ProgCo，详见[来源说明](THIRD_PARTY.md)。
+
 ## 引用
 
-Rui Zou, Mengqi Wei, Xin Zhao, and Ji-Rong Wen. *Agent-Guided Process Verification for Mathematical Self-Correction.*
+arXiv 链接待补。
 
-[第三方来源](THIRD_PARTY.md)
+```bibtex
+@misc{zou2026agpv,
+  title = {Agent-Guided Process Verification for Mathematical Self-Correction},
+  author = {Zou, Rui and Wei, Mengqi and Zhao, Xin and Wen, Ji-Rong},
+  year = {2026}
+}
+```
